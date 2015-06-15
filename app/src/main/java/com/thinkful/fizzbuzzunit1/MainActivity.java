@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.view.View;
+import android.util.Log;
 
 
 public class MainActivity extends Activity {
@@ -71,12 +72,13 @@ public class MainActivity extends Activity {
             checkValue(i);
         }
         for (int i = 0; i < fizzArray.length; i++) {
-            Log.i("MyData", fizzArray[" + i + "] = " + fizzArray[i]);
+            Log.i("MyData", fizzArray [" + i + "] = " + fizzArray[i]");
         }
+
     }
 
 
-    public void checkValue(int i){
+    public String checkValue(int i){
 
         String value;
         if (i % 5 == 0 && i % 3 == 0) { // divisble by 5 & 3
