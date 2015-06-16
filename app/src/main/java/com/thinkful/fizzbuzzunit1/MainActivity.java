@@ -80,7 +80,7 @@ public class MainActivity extends Activity {
 
     public String checkValue(int i){
 
-        String value;
+        String value = null;
         if (i % 5 == 0 && i % 3 == 0) { // divisble by 5 & 3
             valueString = fizzBuzzString;
         }
@@ -104,5 +104,6 @@ public class MainActivity extends Activity {
             valueString = String.valueOf(i);
         }
         textView.append(valueString + "\n"); // display in the textView
-        } // end for loop
+        return value;
+    } // end for loop
     }
